@@ -11,7 +11,7 @@ export class ClassTrafficLight extends Component {
     index === this.state.colorIndex ? colors[this.state.colorIndex] : "black";
 
   incrementIndex = () => {
-    const isLast = (this.state.colorIndex === colors.length - 1);
+    const isLast = this.state.colorIndex === colors.length - 1;
     if (isLast) {
       this.setState({ colorIndex: 0 });
     } else {

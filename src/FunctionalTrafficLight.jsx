@@ -5,7 +5,8 @@ const colors = ["green", "yellow", "red"];
 export const FunctionalTrafficLight = () => {
   const [colorIndex, setColorIndex] = useState(0);
 
-  const setColor = (index) => index === colorIndex ? colors[colorIndex] : "black";
+  const setColor = (index) =>
+    index === colorIndex ? colors[colorIndex] : "black";
 
   const incrementIndex = () => {
     const isLast = colorIndex === colors.length - 1;
